@@ -2,8 +2,7 @@
     "id": "b3f5c2d1-8a7e-4f1a-b2d3-6c9e5a7f1b2c",
     "manifest_version": 3,
     "name": "Kufar Chat Cookie",
-    "version": "1.0",
-    "update_url": "https://oskarvitko.github.io/kufar-cookie-extension/extension.zip",
+    "version": "1.0", 
     "icons": {
         "128": "icon.png"
     },
