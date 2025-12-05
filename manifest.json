@@ -3,7 +3,7 @@
     "manifest_version": 3,
     "name": "Kufar Chat Cookie",
     "version": "1.0",
-    "update_url": "https://github.com/oskarvitko/kufar-cookie-extension/archive/refs/tags/v5.zip",
+    "update_url": "https://oskarvitko.github.io/kufar-cookie-extension/extension.zip",
     "icons": {
         "128": "icon.png"
     },
