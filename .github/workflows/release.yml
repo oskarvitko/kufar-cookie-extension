@@ -16,9 +16,12 @@ jobs:
       - name: Package extension
         run: zip -r extension.zip .
 
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v5
         with:
-          tag_name: v${{ github.run_number }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: .
+          keep_files: true
+          force_orphan: true
+          cname: ''
