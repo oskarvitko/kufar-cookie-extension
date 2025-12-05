@@ -18,8 +18,9 @@ jobs:
 
       - name: Prepare deploy folder
         run: |
-          mkdir ghp
+          mkdir -p ghp
           mv extension.zip ghp/
+          cp privacy.html ghp/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
