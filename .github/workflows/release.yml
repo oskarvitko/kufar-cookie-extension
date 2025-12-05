@@ -16,6 +16,11 @@ jobs:
       - name: Package extension
         run: zip -r extension.zip . -x .github/\*
 
+      - name: Prepare deploy folder
+        run: |
+          mkdir ghp
+          mv extension.zip ghp/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
